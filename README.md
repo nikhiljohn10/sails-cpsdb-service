@@ -2,7 +2,7 @@
 
 ## Using in sails
 
-Place the CPSDB.js inside `/api/services/`. Since services are global in sails, it is possible to call it from anywher inside project root folder. 
+Place the CPSDB.js inside `/api/services/`. Since services are global in sails, it is possible to call it from anywhere inside project root folder. 
 
 ##### Code inside controllers or models
 
