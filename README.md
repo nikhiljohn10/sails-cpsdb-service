@@ -8,37 +8,37 @@ Place the CPSDB.js inside `/api/services/`. Since services are global in sails, 
 
 ```
 var cps = CPSDB.init();
-cps.connect('document', 'document/id'); // parameter 1 is document root & parameter 2 is document id.
-
+cps.connect('document', 'document/id'); 
+// parameter 1 is document root & parameter 2 is document id.
 ```
 
 ### Syntax
 
-##### cps.insert( object, callback );
+#### cps.insert( object, callback );
 
-##### cps.update( object, callback );
+#### cps.update( object, callback );
 
-##### cps.replace( object, callback );
+#### cps.replace( object, callback );
 
-##### cps.partialReplace( object, callback );
+#### cps.partialReplace( object, callback );
 
-##### cps.delete( object, callback );
+#### cps.delete( object, callback );
 
-##### cps.search( object, callback );
+#### cps.search( object, callback );
 
-##### cps.lookup( array,callback );
+#### cps.lookup( array,callback );
 
-##### cps.retrieve( array, callback );
+#### cps.retrieve( array, callback );
 
-##### cps.listLast( integer, integer, callback );
+#### cps.listLast( integer, integer, callback );
 
-##### cps.listPaths( callback );
+#### cps.listPaths( callback );
 
-##### cps.status( callback );
+#### cps.status( callback );
 
-##### cps.clear( callback );
+#### cps.clear( callback );
 
-##### cps.reindex( callback );
+#### cps.reindex( callback );
 
 
 [API Reference](http://docs.clusterpoint.com/wiki/Main_Page)
