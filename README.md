@@ -42,6 +42,8 @@ cps.connect('document', 'document/id'); // parameter 1 is document root & parame
 
 
 [API Reference](http://docs.clusterpoint.com/wiki/Main_Page)
+
+
 [API Code Sample](http://docs.clusterpoint.com/examples/#/Node.js/connection)
 
 ***
