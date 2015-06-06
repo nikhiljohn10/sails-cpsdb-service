@@ -1,4 +1,4 @@
-# CloudPoint API Service for Sails Framework
+# ClusterPoint Cloud API Service for Sails Framework
 
 ## Using in sails
 
