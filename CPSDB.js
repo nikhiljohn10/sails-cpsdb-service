@@ -1,30 +1,27 @@
 var cps = require('cps-api');
 var config = {
     url: 'tcp://cloud-eu-0.clusterpoint.com:9007',
-    db: '',
-    username: '',
-    password: '',
+    username: '', // Email ID
+    password: '', // Account Password
     aid: 0 // Account ID
 };
-exports.init = function() {
+exports.init = function(db) {
     var doc = {
         document: "no",
         balance: "yes"
     };
-    var connection;
-    return {
-        connect: function(doc, docID) {
-            connection = new cps.Connection(
+    var connection = new cps.Connection(
                 config.url,
-                config.db,
+                db,
                 config.username,
                 config.password,
-                doc,
-                docID, {
+                'document',
+                'document/id', // Only change if neccessary
+                {
                     account: config.aid
                 }
-            );
-        },
+            );;
+    return {
         insert: function(data, cb) {
             connection.sendRequest(new cps.InsertRequest(data), function(err, resp) {
                 if (err) return cb(err);

@@ -4,13 +4,20 @@
 
 Place the CPSDB.js inside `/api/services/`. Since services are global in sails, it is possible to call it from anywhere inside project root folder. 
 
+
+##### Dependency
+
+```
+$ npm install cps-api --save
+```
+
 ##### Code inside controllers or models
 
 ```
-var cps = CPSDB.init();
-cps.connect('document', 'document/id'); 
-// parameter 1 is document root & parameter 2 is document id.
+var cps = CPSDB.init('database'); // Parameter is the name of database.
 ```
+You have to call init function to connect to each database.
+
 
 ### Syntax
 
@@ -24,7 +31,7 @@ cps.connect('document', 'document/id');
 
 #### cps.delete( object, callback );
 
-#### cps.search( object, callback );
+#### cps.search( array, callback ); // Array example: [{ id: uid }]
 
 #### cps.lookup( array,callback );
 
